@@ -6,12 +6,11 @@ const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9
       return response.json();
     })
     .then((data) => {
-    window.localStorage.setItem("myObject", JSON.stringify(data));
+    window.localStorage.setItem("myObject", JSON.stringify(data.data));
     });
 
     const newObject = window.localStorage.getItem("myObject");
-    const vme = JSON.parse(newObject);
-    const me = vme.data;
+    const me = JSON.parse(newObject);
 document.getElementById('care-name').innerHTML = me.fname;
 document.getElementById('care-date').innerHTML = me.care_plan.careplan_date;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
