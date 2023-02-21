@@ -23,12 +23,16 @@ document.getElementById('two-name-disp').href = me.care_plan.delivery_partner_li
 
 const deliveryValue = document.getElementById('delivery-div')
 const pickupValue = document.getElementById('pickup-div')
+const warningItalic = document.getElementById('warning')
 
 if (me.care_plan.delivery_preference == false){
 deliveryValue.style.display = 'none';
 }
 if (me.care_plan.delivery_preference == true){
 pickupValue.style.display = 'none';
+}
+if (me.care_plan.careplan_contains_thc == false){
+warningItalic.style.display = 'none';
 }
 
 if (typeof me.care_plan.workday.morning != 'undefined'){ 
