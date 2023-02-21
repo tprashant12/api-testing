@@ -1,5 +1,16 @@
 window.onload = async function currentUrl(){
+const url = "https://afa73145-f81e-46ca-b45a-d628fce2eb88.mock.pstmn.io/careplan?k_uid=1";
+ 
+ fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+    window.localStorage.setItem("myObject", JSON.stringify(data));
+    });
 
+    const newObject = window.localStorage.getItem("myObject");
+    const me = JSON.parse(newObject);
 document.getElementById('care-name').innerHTML = me.fname;
 document.getElementById('care-date').innerHTML = me.care_plan.careplan_date;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
