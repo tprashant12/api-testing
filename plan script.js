@@ -1,4 +1,4 @@
-window.onload = function currentUrl(){
+window.onload = async function currentUrl(){
 
 const url = "https://afa73145-f81e-46ca-b45a-d628fce2eb88.mock.pstmn.io/careplan?k_uid=1";
  
