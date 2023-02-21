@@ -1,5 +1,5 @@
 window.onload = async function currentUrl(){
-const url = "https://afa73145-f81e-46ca-b45a-d628fce2eb88.mock.pstmn.io/careplan?k_uid=1";
+const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9FATZTQN82JXSSG7";
  
  fetch(url)
     .then((response) => {
