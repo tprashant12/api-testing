@@ -9,7 +9,7 @@ const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9
     window.localStorage.setItem("myObject", JSON.stringify(data));
     });
 
-    const newObject = window.localStorage.getItem("myObject");
+    const newObject = window.localStorage.getItem("myObject.data");
     const me = JSON.parse(newObject);
 document.getElementById('care-name').innerHTML = me.fname;
 document.getElementById('care-date').innerHTML = me.care_plan.careplan_date;
