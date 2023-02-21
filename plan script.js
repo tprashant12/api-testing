@@ -20,27 +20,14 @@ document.getElementById('two-name-disp').innerHTML = me.care_plan.delivery_partn
 document.getElementById('one-name-disp').href = me.care_plan.pickup_partner_link;
 document.getElementById('two-name-disp').href = me.care_plan.delivery_partner_link;
 
-
 const deliveryValue = document.getElementById('delivery-div')
 const pickupValue = document.getElementById('pickup-div')
-const warningItalic = document.getElementById('warning')
 
 if (me.care_plan.delivery_preference == false){
 deliveryValue.style.display = 'none';
 }
 if (me.care_plan.delivery_preference == true){
 pickupValue.style.display = 'none';
-}
-if (me.care_plan.careplan_contains_thc == false){
-warningItalic.style.display = 'none';
-}
-
-if(typeof me.care_plan.workday.morning == 'undefined' && typeof me.care_plan.workday.afternoon == 'undefined' && typeof me.care_plan.workday.evening == 'undefined' typeof me.care_plan.workday.bedtime == 'undefined'){
-document.getElementById('work-days').style.display = 'none'
-}
-
-if(typeof me.care_plan.non_workday.morning == 'undefined' && typeof me.care_plan.non_workday.afternoon == 'undefined' && typeof me.care_plan.non_workday.evening == 'undefined' typeof me.care_plan.non_workday.bedtime == 'undefined'){
-document.getElementById('non-work-days').style.display = 'none'
 }
 
 if (typeof me.care_plan.workday.morning != 'undefined'){ 
@@ -241,4 +228,3 @@ document.getElementById('warn-15').style.display = 'inline';
 document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].category_image_url;
 }
 }
-
