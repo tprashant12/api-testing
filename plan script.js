@@ -6,7 +6,7 @@ const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9
       return response.json();
     })
     .then((data) => {
-    window.localStorage.setItem("myObject", JSON.stringify(data));
+    window.localStorage.setItem("myObject", JSON.stringify(data.data));
     });
 
     const newObject = window.localStorage.getItem("myObject.data");
