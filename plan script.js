@@ -60,7 +60,7 @@ document.getElementById('img-1').src = me.care_plan.workday.morning[1].category_
 }
 }
 
-if (typeof me.care_plan.workday.afternoon != ''){ 
+if (me.care_plan.workday.afternoon != ''){ 
 //workday afternoon [0]
 document.getElementById('wafternoon').style.display = 'inline'
 document.getElementById('div-2').style.display = 'inline'
