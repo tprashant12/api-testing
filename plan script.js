@@ -35,7 +35,7 @@ if (me.care_plan.careplan_contains_thc == false){
 warningItalic.style.display = 'none';
 }
 
-if (typeof me.care_plan.workday.morning != 'undefined'){ 
+if (me.care_plan.workday.morning != ''){ 
 //workday morning [0]
 document.getElementById('wmorning').style.display = 'inline'
 document.getElementById('div-0').style.display = 'inline'
@@ -47,7 +47,7 @@ document.getElementById('warn-0').style.display = 'inline';
 }
 document.getElementById('img-0').src = me.care_plan.workday.morning[0].category_image_url;
 
-if(typeof me.care_plan.workday.morning[1] != 'undefined'){ 
+if(me.care_plan.workday.morning[1] != ''){ 
 //workday morning [1]
 document.getElementById('div-1').style.display = 'inline'
 document.getElementById('prod-1').innerHTML = me.care_plan.workday.morning[1].dose_title;
@@ -72,7 +72,7 @@ document.getElementById('warn-2').style.display = 'inline';
 }
 document.getElementById('img-2').src = me.care_plan.workday.afternoon[0].category_image_url;
 
-if(typeof me.care_plan.workday.afternoon[1] != 'undefined'){ 
+if(me.care_plan.workday.afternoon[1] != ''){ 
 //workday afternoon [1]
 document.getElementById('div-3').style.display = 'inline'
 document.getElementById('prod-3').innerHTML = me.care_plan.workday.afternoon[1].dose_title;
