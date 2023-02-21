@@ -6,7 +6,7 @@ const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9
       return response.json();
     })
     .then((data) => {
-    window.localStorage.setItem("myObject", JSON.stringify(data[‘data’]));
+    window.localStorage.setItem("myObject", JSON.stringify(data[data]));
     });
 
     const newObject = window.localStorage.getItem("myObject");
@@ -35,7 +35,7 @@ if (me.care_plan.careplan_contains_thc == false){
 warningItalic.style.display = 'none';
 }
 
-if (typeof me.care_plan.workday.morning[] != ''){ 
+if (typeof me.care_plan.workday.morning != ''){ 
 //workday morning [0]
 document.getElementById('wmorning').style.display = 'inline'
 document.getElementById('div-0').style.display = 'inline'
@@ -60,7 +60,7 @@ document.getElementById('img-1').src = me.care_plan.workday.morning[1].category_
 }
 }
 
-if (typeof me.care_plan.workday.afternoon[] != ''){ 
+if (typeof me.care_plan.workday.afternoon != ''){ 
 //workday afternoon [0]
 document.getElementById('wafternoon').style.display = 'inline'
 document.getElementById('div-2').style.display = 'inline'
@@ -85,7 +85,7 @@ document.getElementById('img-3').src = me.care_plan.workday.afternoon[1].categor
 }
 }
 
-if (typeof me.care_plan.workday.evening[] != ''){ 
+if (typeof me.care_plan.workday.evening != ''){ 
 //workday evening [0]
 document.getElementById('wevening').style.display = 'inline'
 document.getElementById('div-4').style.display = 'inline'
@@ -110,7 +110,7 @@ document.getElementById('img-5').src = me.care_plan.workday.evening[1].category_
 }
 }
 
-if(typeof me.care_plan.workday.bedtime[] != ''){ 
+if(typeof me.care_plan.workday.bedtime != ''){ 
 //workday bedtime [0]
 document.getElementById('div-6').style.display = 'inline'
 document.getElementById('wbedtime').style.display = 'inline'
@@ -135,7 +135,7 @@ document.getElementById('img-7').src = me.care_plan.workday.bedtime[1].category_
 }
 }
 
-if(typeof me.care_plan.non_workday.morning[] != ''){ 
+if(typeof me.care_plan.non_workday.morning != ''){ 
 //non workday morning [0]
 document.getElementById('div-8').style.display = 'inline'
 document.getElementById('nwmorning').style.display = 'inline'
@@ -160,7 +160,7 @@ document.getElementById('img-9').src = me.care_plan.non_workday.morning[1].categ
 }
 }
 
-if(typeof me.care_plan.non_workday.afternoon[] != ''){ 
+if(typeof me.care_plan.non_workday.afternoon != ''){ 
 //non workday afternoon [0]
 document.getElementById('div-10').style.display = 'inline'
 document.getElementById('nwafternoon').style.display = 'inline'
@@ -186,7 +186,7 @@ document.getElementById('img-11').src = me.care_plan.non_workday.afternoon[1].ca
 }
 
 
-if(typeof me.care_plan.non_workday.evening[] != ''){ 
+if(typeof me.care_plan.non_workday.evening != ''){ 
 //non workday evening [0]
 document.getElementById('div-12').style.display = 'inline'
 document.getElementById('nwevening').style.display = 'inline'
@@ -211,7 +211,7 @@ document.getElementById('img-13').src = me.care_plan.non_workday.evening[1].cate
 }
 }
 
-if(typeof me.care_plan.non_workday.bedtime[] != ''){ 
+if(typeof me.care_plan.non_workday.bedtime != ''){ 
 //non workday bedtime [0]
 document.getElementById('div-14').style.display = 'inline'
 document.getElementById('nwbedtime').style.display = 'inline'
