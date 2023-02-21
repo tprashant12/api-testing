@@ -1,7 +1,3 @@
-<script>
-
-
-
 const url = "https://afa73145-f81e-46ca-b45a-d628fce2eb88.mock.pstmn.io/careplan?k_uid=1";
  
  fetch(url)
@@ -246,4 +242,3 @@ document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].cate
 }
 }
 
-</script>
