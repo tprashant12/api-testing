@@ -10,7 +10,7 @@ const url = "https://afa73145-f81e-46ca-b45a-d628fce2eb88.mock.pstmn.io/careplan
 
     const newObject = window.localStorage.getItem("myObject");
     const me = JSON.parse(newObject);
-
+document.getElementById('care-name').innerHTML = me.fname;
 document.getElementById('care-date').innerHTML = me.care_plan.careplan_date;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
