@@ -27,9 +27,11 @@ document.getElementById('your-products').onclick = function(){
 document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
-const newDate = mydate.toString("MMMM yyyy");
- 
-document.getElementById('care-date').innerHTML = newDate;
+const part1 = mydate.slice(1, 4); 
+const part2 = mydate.slice(6, 7);
+const part3 = mydate.slice(9, 10);
+
+document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
 document.getElementById('bedtime-para').innerHTML = me.care_plan.why_recommended.bedtime;
