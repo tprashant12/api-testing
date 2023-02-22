@@ -8,6 +8,12 @@ document.getElementById('your-products').onclick = function(){
  window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
 };
  
+ document.getElementById(' your-products-mobile-link').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
+};
+ 
+
+ 
  fetch(url)
     .then((response) => {
       return response.json();
