@@ -2,12 +2,13 @@ window.onload = async function currentUrl(){
  
 const urlParams = new URLSearchParams(window.location.search);
 const k_uid = urlParams.get('k_uid');
+const url = https://api.staging.eo.care/union/profile/careplan?kuid=${k_uid};
  
 document.getElementById('your-products').onclick = function(){
  window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
 };
  
- fetch(https://api.staging.eo.care/union/profile/careplan?kuid=${k_uid})
+ fetch(url)
     .then((response) => {
       return response.json();
     })
