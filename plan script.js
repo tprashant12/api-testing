@@ -26,7 +26,7 @@ document.getElementById('your-products').onclick = function(){
  
 document.getElementById('care-name').innerHTML = me.fname;
  
-const mydate = new Date(me.care_plan.careplan_date);
+const mydate = me.care_plan.careplan_date;
 const newDate = mydate.toString("MMMM yyyy");
  
 document.getElementById('care-date').innerHTML = newDate;
