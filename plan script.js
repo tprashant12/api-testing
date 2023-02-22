@@ -32,7 +32,7 @@ const part3 = mydate.slice(8, 10);
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
  
- if (me.care_plan.why_recommended != ''){
+ if (me.care_plan.why_recommended != null){
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
 document.getElementById('bedtime-para').innerHTML = me.care_plan.why_recommended.bedtime;
