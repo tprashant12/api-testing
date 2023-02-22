@@ -28,8 +28,8 @@ document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
 const part1 = mydate.slice(0, 4); 
-const part2 = mydate.slice(6, 7);
-const part3 = mydate.slice(9, 10);
+const part2 = mydate.slice(5, 7);
+const part3 = mydate.slice(8, 10);
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
