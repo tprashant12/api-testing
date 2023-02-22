@@ -27,9 +27,9 @@ document.getElementById('your-products').onclick = function(){
 document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
-const part1 = mydate.slice(1, 5); 
-const part2 = mydate.slice(7, 10);
-const part3 = mydate.slice(12, 15);
+const part1 = mydate.slice(1, 4); 
+const part2 = mydate.slice(6, 8);
+const part3 = mydate.slice(10, 12);
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
