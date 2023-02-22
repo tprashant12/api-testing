@@ -1,5 +1,8 @@
 window.onload = async function currentUrl(){
-const url = "https://api.staging.eo.care/union/profile/careplan?kuid=01GST99MNQ9FATZTQN82JXSSG7";
+ 
+const urlParams = new URLSearchParams(window.location.search);
+const k_uid = urlParams.get('k_uid'); 
+const url = 'https://www.eo.care/iaff/care-plan' + k_uid;
  
  fetch(url)
     .then((response) => {
