@@ -24,8 +24,13 @@ document.getElementById('your-products').onclick = function(){
 
     const newObject = window.localStorage.getItem("myObject");
     const me = JSON.parse(newObject);
+ 
 document.getElementById('care-name').innerHTML = me.fname;
-document.getElementById('care-date').innerHTML = me.care_plan.careplan_date;
+ 
+const mydate = new Date(me.care_plan.careplan_date);
+const newDate = mydate.toString("MMMM yyyy");
+ 
+document.getElementById('care-date').innerHTML = newDate;
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
 document.getElementById('bedtime-para').innerHTML = me.care_plan.why_recommended.bedtime;
