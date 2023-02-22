@@ -1,10 +1,13 @@
 window.onload = async function currentUrl(){
  
 const urlParams = new URLSearchParams(window.location.search);
-const k_uid = urlParams.get('k_uid'); 
-const url = 'https://www.eo.care/iaff/care-plan' + k_uid;
+const k_uid = urlParams.get('k_uid');
  
- fetch(url)
+document.getElementById('your-products').onclick = function(){
+ window.open('https://www.eo.care/iaff/care-products' + k_uid)
+};
+ 
+ fetch(https://api.staging.eo.care/union/profile/careplan?kuid=${k_uid})
     .then((response) => {
       return response.json();
     })
