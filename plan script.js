@@ -35,22 +35,24 @@ document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + par
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
 document.getElementById('bedtime-para').innerHTML = me.care_plan.why_recommended.bedtime;
-document.getElementById('one-name-disp').innerHTML = me.care_plan.dispensary_name;
-document.getElementById('two-name-disp').innerHTML = me.care_plan.delivery_partner_name;
-document.getElementById('one-name-disp').href = me.care_plan.pickup_partner_link;
-document.getElementById('two-name-disp').href = me.care_plan.delivery_partner_link;
 
 const deliveryValue = document.getElementById('delivery-div')
 const pickupValue = document.getElementById('pickup-div')
 const warningItalic = document.getElementById('warning')
 
+
 if (me.care_plan.delivery_preference == false){
 deliveryValue.style.display = 'none';
 document.getElementById('home-message').style.display = 'none';
+document.getElementById('one-name-disp').innerHTML = me.care_plan.dispensary_name;
+document.getElementById('one-name-disp').href = me.care_plan.pickup_partner_link;
 }
+ 
 if (me.care_plan.delivery_preference == true){
 pickupValue.style.display = 'none';
 document.getElementById('pickup-message').style.display = 'none';
+document.getElementById('two-name-disp').innerHTML = me.care_plan.delivery_partner_name;
+document.getElementById('two-name-disp').href = me.care_plan.delivery_partner_link;
 }
 if (me.care_plan.careplan_contains_thc == false){
 warningItalic.style.display = 'none';
