@@ -31,9 +31,12 @@ const part2 = mydate.slice(5, 7);
 const part3 = mydate.slice(8, 10);
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
+ 
+ if (me.care_plan.why_recommended != ''){
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
 document.getElementById('bedtime-para').innerHTML = me.care_plan.why_recommended.bedtime;
+ }
 
 const deliveryValue = document.getElementById('delivery-div')
 const pickupValue = document.getElementById('pickup-div')
