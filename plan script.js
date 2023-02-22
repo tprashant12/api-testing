@@ -46,9 +46,11 @@ const warningItalic = document.getElementById('warning')
 
 if (me.care_plan.delivery_preference == false){
 deliveryValue.style.display = 'none';
+document.getElementById('home-message').style.display = 'none';
 }
 if (me.care_plan.delivery_preference == true){
 pickupValue.style.display = 'none';
+document.getElementById('pickup-message').style.display = 'none';
 }
 if (me.care_plan.careplan_contains_thc == false){
 warningItalic.style.display = 'none';
