@@ -29,7 +29,7 @@ console.log(me);
 
 firstFunction();
 
-function firstFunction(){
+function firstFunction(me){
  
 document.getElementById('care-name').innerHTML = me.fname;
  
