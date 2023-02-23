@@ -29,7 +29,7 @@ const mydate = me.care_plan.careplan_date;
 const part1 = mydate.slice(0, 4); 
 let part2 = mydate.slice(5, 7);
 const part3 = mydate.slice(8, 10);
-if (part2 < 10) { part2.slice(1, 2) }
+if (part2 < 10) { part2.slice(1) }
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
  
