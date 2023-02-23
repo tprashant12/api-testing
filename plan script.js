@@ -20,10 +20,11 @@ document.getElementById('your-products').onclick = function(){
     })
     .then((data) => {
     window.localStorage.setItem("myObject", JSON.stringify(data.data));
+    let newObject = window.localStorage.getItem("myObject");
+    let me = JSON.parse(newObject);
+    console.log(me);
     });
-const newObject = window.localStorage.getItem("myObject");
-const me = JSON.parse(newObject);
-console.log(me);
+
 document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
