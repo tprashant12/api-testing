@@ -40,6 +40,12 @@ console.log(part3)
 
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
+
+if(me.care_plan.workday.morning == '' && me.care_plan.workday.afternoon == ''){
+if(me.care_plan.workday.evening == '' && me.care_plan.workday.bedtime == ''){
+document.getElementById('work-days').style.display = 'none'
+ }
+} 
  
  if (me.care_plan.why_recommended != null){
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
