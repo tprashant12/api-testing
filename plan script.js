@@ -1,4 +1,9 @@
-window.onload = function currentUrl(){
+window.onload = function newLoad(){
+ currentUrl();
+ firstFunction();
+}
+
+function currentUrl(){
  
 const urlParams = new URLSearchParams(window.location.search);
 const k_uid = urlParams.get('k_uid');
@@ -21,13 +26,11 @@ document.getElementById('your-products').onclick = function(){
     });
 
 const newObject = window.localStorage.getItem("myObject");
-window.onload = function newLoad(){
- 
- const me = JSON.parse(newObject);
- console.log(me);
- firstFunction();
+const me = JSON.parse(newObject);
+console.log(me);
 }
- function firstFunction(){
+
+function firstFunction(){
  
 document.getElementById('care-name').innerHTML = me.fname;
  
@@ -287,6 +290,5 @@ document.getElementById('warn-15').style.display = 'inline';
 document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].category_image_url;
 }
 }
-
- }
+ 
 }
