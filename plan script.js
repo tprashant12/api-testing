@@ -37,7 +37,7 @@ if (part2.length > 1){
 part2.replace(0, '')
 console.log(part2)
 }
-if (part3 < 10){ 
+if (part3 > 10){ 
 part3.slice(1)
 console.log(part3)
 }
