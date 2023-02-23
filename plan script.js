@@ -20,11 +20,13 @@ document.getElementById('your-products').onclick = function(){
     window.localStorage.setItem("myObject", JSON.stringify(data.data));
     });
 
-    const newObject = window.localStorage.getItem("myObject");
-    const me = JSON.parse(newObject);
- console.log(me);
+const newObject = window.localStorage.getItem("myObject");
+window.onload = function newLoad(){
  
+ const me = JSON.parse(newObject);
+ console.log(me);
  firstFunction();
+}
  function firstFunction(){
  
 document.getElementById('care-name').innerHTML = me.fname;
