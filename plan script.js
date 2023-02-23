@@ -1,4 +1,4 @@
-window.onload = async function currentUrl(){
+window.onload = function currentUrl(){
  
 const urlParams = new URLSearchParams(window.location.search);
 const k_uid = urlParams.get('k_uid');
@@ -22,6 +22,8 @@ document.getElementById('your-products').onclick = function(){
 
     const newObject = window.localStorage.getItem("myObject");
     const me = JSON.parse(newObject);
+ firstFunction();
+ function firstFunction(){
  
 document.getElementById('care-name').innerHTML = me.fname;
  
@@ -282,4 +284,5 @@ document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].cate
 }
 }
 
+ }
 }
