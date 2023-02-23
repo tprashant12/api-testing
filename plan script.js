@@ -24,13 +24,13 @@ document.getElementById('your-products').onclick = function(){
     .then((data) => {
     window.localStorage.setItem("myObject", JSON.stringify(data.data));
     });
-
-const newObject = window.localStorage.getItem("myObject");
-const me = JSON.parse(newObject);
-console.log(me);
 }
 
 function firstFunction(){
+ 
+const newObject = window.localStorage.getItem("myObject");
+const me = JSON.parse(newObject);
+console.log(me);
  
 document.getElementById('care-name').innerHTML = me.fname;
  
