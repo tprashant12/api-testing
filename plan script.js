@@ -1,3 +1,32 @@
+window.onload = function newTest(){
+currentUrl();
+function currentUrl(){
+ 
+const urlParams = new URLSearchParams(window.location.search);
+const k_uid = urlParams.get('k_uid');
+const url = 'https://api.staging.eo.care/union/profile/careplan?kuid='+ k_uid ;
+ 
+document.getElementById('your-products').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
+};
+ 
+ document.getElementById('your-products-mobile-link').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
+};
+ 
+ fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+    window.localStorage.setItem("myObject", JSON.stringify(data.data));
+    });
+const newObject = window.localStorage.getItem("myObject");
+const me = JSON.parse(newObject);
+console.log(me);
+}
+}
+
 firstFunction();
 
 function firstFunction(){
