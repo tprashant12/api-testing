@@ -23,9 +23,7 @@ document.getElementById('your-products').onclick = function(){
     let newObject = window.localStorage.getItem("myObject");
     let me = JSON.parse(newObject);
     console.log(me);
-    });
-
-document.getElementById('care-name').innerHTML = me.fname;
+  document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
 const part1 = mydate.slice(0, 4); 
@@ -283,6 +281,8 @@ document.getElementById('warn-15').style.display = 'inline';
 document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].category_image_url;
 }
 }
+    });
+
 }
 }
 
