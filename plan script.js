@@ -30,7 +30,7 @@ const part1 = mydate.slice(0, 4);
 let part2 = mydate.slice(5, 7);
 const part3 = mydate.slice(8, 10);
 if (part2 < 10){ 
-part2.slice(1)
+part2.replace(0, '')
 console.log(part2)
 }
 if (part3 < 10){ 
