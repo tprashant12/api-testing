@@ -1,6 +1,4 @@
-window.onload = function newLoad(){
 firstFunction();
-}
 
 function firstFunction(){
  
