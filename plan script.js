@@ -27,9 +27,9 @@ console.log(me);
 }
 }
 
-firstFunction();
+firstFunction(me);
 
-function firstFunction(me){
+function firstFunction(){
  
 document.getElementById('care-name').innerHTML = me.fname;
  
