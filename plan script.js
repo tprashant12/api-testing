@@ -27,10 +27,9 @@ document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
 const part1 = mydate.slice(0, 4); 
-const part2 = mydate.slice(5, 7);
+let part2 = mydate.slice(5, 7);
 const part3 = mydate.slice(8, 10);
-if (part2 < 10) { part2.replace(‘0’, ‘’) }
-if (part3 < 10) { part3.replace(‘0’, ‘’) }
+if (part2 < 10) { part2.slice(1, 2) }
 
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
  
