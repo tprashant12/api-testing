@@ -47,6 +47,12 @@ document.getElementById('work-days').style.display = 'none'
  }
 } 
  
+ if(me.care_plan.non_workday.morning == '' && me.care_plan.non_workday.afternoon == ''){
+if(me.care_plan.non_workday.evening == '' && me.care_plan.non_workday.bedtime == ''){
+document.getElementById('non-work-days').style.display = 'none'
+ }
+}
+ 
  if (me.care_plan.why_recommended != null){
 document.getElementById('dosing-para').innerHTML = me.care_plan.why_recommended.dosing;
 document.getElementById('mix-para').innerHTML = me.care_plan.why_recommended.product_mix;
