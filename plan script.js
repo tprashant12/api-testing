@@ -22,6 +22,8 @@ document.getElementById('your-products').onclick = function(){
 
     const newObject = window.localStorage.getItem("myObject");
     const me = JSON.parse(newObject);
+ console.log(me);
+ 
  firstFunction();
  function firstFunction(){
  
