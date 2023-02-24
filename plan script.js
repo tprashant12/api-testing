@@ -26,15 +26,16 @@ document.getElementById('your-products').onclick = function(){
   document.getElementById('care-name').innerHTML = me.fname;
  
 const mydate = me.care_plan.careplan_date;
-const part1 = mydate.slice(0, 4); 
-let part2 = mydate.slice(5, 7);
-const part3 = mydate.slice(8, 10);
-if (part2.length > 1){ 
-part2.replace(0, '')
+var part1 = mydate.slice(2, 4); 
+var part2 = mydate.slice(5, 7);
+var part3 = mydate.slice(8, 10);
+  
+if (part2 < 10){ 
+var part2 = mydate.slice(6, 7);
 console.log(part2)
 }
-if (part3 > 10){ 
-part3.slice(0)
+if (part3 < 10){ 
+var part3 = mydate.slice(9, 10);
 console.log(part3)
 }
 
