@@ -34,7 +34,7 @@ part2.replace(0, '')
 console.log(part2)
 }
 if (part3 > 10){ 
-part3.slice(0, 1)
+part3.slice(0)
 console.log(part3)
 }
 
