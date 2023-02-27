@@ -91,7 +91,7 @@ if (me.care_plan.workday.morning != ''){
 document.getElementById('wmorning').style.display = 'inline'
 document.getElementById('div-0').style.display = 'inline'
 document.getElementById('prod-0').innerHTML = me.care_plan.workday.morning[0].dose_title;
-document.getElementById('prod-0').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&' + me.care_plan.workday.morning[0].name;
+document.getElementById('prod-0').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.morning[0].name;
 document.getElementById('use-0').innerHTML = me.care_plan.workday.morning[0].usage_instructions;
 if(me.care_plan.workday.morning[0].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.morning[0].thc_cbd_type == "one_one_type"){
 document.getElementById('warn-0').style.display = 'inline';
