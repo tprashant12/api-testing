@@ -91,7 +91,7 @@ document.getElementById('div-0').style.display = 'inline'
 document.getElementById('prod-0').innerHTML = me.care_plan.workday.morning[0].dose_title;
 document.getElementById('prod-0').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.morning[0].name;
 document.getElementById('use-0').innerHTML = me.care_plan.workday.morning[0].usage_instructions;
-if(me.care_plan.workday.morning[0].contains_thc == "true"){
+if(me.care_plan.workday.morning[0].contains_thc == true){
 document.getElementById('warn-0').style.display = 'inline';
 }
 document.getElementById('img-0').src = me.care_plan.workday.morning[0].category_image_url;
@@ -102,7 +102,7 @@ document.getElementById('div-1').style.display = 'inline'
 document.getElementById('prod-1').innerHTML = me.care_plan.workday.morning[1].dose_title;
 document.getElementById('prod-1').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.morning[1].name;
 document.getElementById('use-1').innerHTML = me.care_plan.workday.morning[1].usage_instructions;
-if(me.care_plan.workday.morning[1]..contains_thc == "true"){
+if(me.care_plan.workday.morning[1].contains_thc == "true"){
 document.getElementById('warn-1').style.display = 'inline';
 }
 document.getElementById('img-1').src = me.care_plan.workday.morning[1].category_image_url;
