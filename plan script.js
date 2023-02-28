@@ -116,7 +116,7 @@ document.getElementById('div-2').style.display = 'inline'
 document.getElementById('prod-2').innerHTML = me.care_plan.workday.afternoon[0].dose_title;
 document.getElementById('prod-2').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.afternoon[0].name;
 document.getElementById('use-2').innerHTML = me.care_plan.workday.afternoon[0].usage_instructions;
-if(me.care_plan.workday.afternoon[0].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.afternoon[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.afternoon[0].contains_thc == true){
 document.getElementById('warn-2').style.display = 'inline';
 }
 document.getElementById('img-2').src = me.care_plan.workday.afternoon[0].category_image_url;
@@ -127,7 +127,7 @@ document.getElementById('div-3').style.display = 'inline'
 document.getElementById('prod-3').innerHTML = me.care_plan.workday.afternoon[1].dose_title;
 document.getElementById('prod-3').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.afternoon[1].name;
 document.getElementById('use-3').innerHTML = me.care_plan.workday.afternoon[1].usage_instructions;
-if(me.care_plan.workday.afternoon[1].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.afternoon[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.afternoon[1].contains_thc == true){
 document.getElementById('warn-3').style.display = 'inline';
 }
 document.getElementById('img-3').src = me.care_plan.workday.afternoon[1].category_image_url;
@@ -141,7 +141,7 @@ document.getElementById('div-4').style.display = 'inline'
 document.getElementById('prod-4').innerHTML = me.care_plan.workday.evening[0].dose_title;
 document.getElementById('prod-4').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.evening[0].name;
 document.getElementById('use-4').innerHTML = me.care_plan.workday.evening[0].usage_instructions;
-if(me.care_plan.workday.evening[0].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.evening[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.evening[0].contains_thc == true){
 document.getElementById('warn-4').style.display = 'inline';
 }
 document.getElementById('img-4').src = me.care_plan.workday.evening[0].category_image_url;
@@ -152,7 +152,7 @@ document.getElementById('div-5').style.display = 'inline'
 document.getElementById('prod-5').innerHTML = me.care_plan.workday.evening[1].dose_title;
 document.getElementById('prod-5').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.evening[1].name;
 document.getElementById('use-5').innerHTML = me.care_plan.workday.evening[1].usage_instructions;
-if(me.care_plan.workday.evening[1].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.evening[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.evening[1].contains_thc == true){
 document.getElementById('warn-5').style.display = 'inline';
 }
 document.getElementById('img-5').src = me.care_plan.workday.evening[1].category_image_url;
@@ -166,7 +166,7 @@ document.getElementById('wbedtime').style.display = 'inline'
 document.getElementById('prod-6').innerHTML = me.care_plan.workday.bedtime[0].dose_title;
 document.getElementById('prod-6').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.bedtime[0].name;
 document.getElementById('use-6').innerHTML = me.care_plan.workday.bedtime[0].usage_instructions;
-if(me.care_plan.workday.bedtime[0].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.bedtime[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.bedtime[0].contains_thc == true){
 document.getElementById('warn-6').style.display = 'inline';
 }
 document.getElementById('img-6').src = me.care_plan.workday.bedtime[0].category_image_url;
@@ -177,7 +177,7 @@ document.getElementById('div-7').style.display = 'inline'
 document.getElementById('prod-7').innerHTML = me.care_plan.workday.bedtime[1].dose_title;
 document.getElementById('prod-7').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.bedtime[1].name;
 document.getElementById('use-7').innerHTML = me.care_plan.workday.bedtime[1].usage_instructions;
-if(me.care_plan.workday.bedtime[1].thc_cbd_type == "high_cbd_type" || me.care_plan.workday.bedtime[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.workday.bedtime[1].contains_thc == true){
 document.getElementById('warn-7').style.display = 'inline';
 }
 document.getElementById('img-7').src = me.care_plan.workday.bedtime[1].category_image_url;
@@ -191,7 +191,7 @@ document.getElementById('nwmorning').style.display = 'inline'
 document.getElementById('prod-8').innerHTML = me.care_plan.non_workday.morning[0].dose_title;
 document.getElementById('prod-8').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.morning[0].name;
 document.getElementById('use-8').innerHTML = me.care_plan.non_workday.morning[0].usage_instructions;
-if(me.care_plan.non_workday.morning[0].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.morning[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.morning[0].contains_thc == true){
 document.getElementById('warn-8').style.display = 'inline';
 }
 document.getElementById('img-8').src = me.care_plan.non_workday.morning[0].category_image_url;
@@ -202,7 +202,7 @@ document.getElementById('div-9').style.display = 'inline'
 document.getElementById('prod-9').innerHTML = me.care_plan.non_workday.morning[1].dose_title;
 document.getElementById('prod-9').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.morning[1].name;
 document.getElementById('use-9').innerHTML = me.care_plan.non_workday.morning[1].usage_instructions;
-if(me.care_plan.non_workday.morning[1].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.morning[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.morning[1].contains_thc == true){
 document.getElementById('warn-9').style.display = 'inline';
 }
 document.getElementById('img-9').src = me.care_plan.non_workday.morning[1].category_image_url;
@@ -216,7 +216,7 @@ document.getElementById('nwafternoon').style.display = 'inline'
 document.getElementById('prod-10').innerHTML = me.care_plan.non_workday.afternoon[0].dose_title;
 document.getElementById('prod-10').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.afternoon[0].name;
 document.getElementById('use-10').innerHTML = me.care_plan.non_workday.afternoon[0].usage_instructions;
-if(me.care_plan.non_workday.afternoon[0].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.afternoon[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.afternoon[0].contains_thc == true){
 document.getElementById('warn-10').style.display = 'inline';
 }
 document.getElementById('img-10').src = me.care_plan.non_workday.afternoon[0].category_image_url;
@@ -227,7 +227,7 @@ document.getElementById('div-11').style.display = 'inline'
 document.getElementById('prod-11').innerHTML = me.care_plan.non_workday.afternoon[1].dose_title;
 document.getElementById('prod-11').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.afternoon[1].name;
 document.getElementById('use-11').innerHTML = me.care_plan.non_workday.afternoon[1].usage_instructions;
-if(me.care_plan.non_workday.afternoon[1].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.afternoon[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.afternoon[1].contains_thc == true){
 document.getElementById('warn-11').style.display = 'inline';
 }
 document.getElementById('img-11').src = me.care_plan.non_workday.afternoon[1].category_image_url;
@@ -242,7 +242,7 @@ document.getElementById('nwevening').style.display = 'inline'
 document.getElementById('prod-12').innerHTML = me.care_plan.non_workday.evening[0].dose_title;
 document.getElementById('prod-12').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.evening[0].name;
 document.getElementById('use-12').innerHTML = me.care_plan.non_workday.evening[0].usage_instructions;
-if(me.care_plan.non_workday.evening[0].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.evening[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.evening[0].contains_thc == true){
 document.getElementById('warn-12').style.display = 'inline';
 }
 document.getElementById('img-12').src = me.care_plan.non_workday.evening[0].category_image_url;
@@ -253,7 +253,7 @@ document.getElementById('div-13').style.display = 'inline'
 document.getElementById('prod-13').innerHTML = me.care_plan.non_workday.evening[1].dose_title;
 document.getElementById('prod-13').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.evening[1].name;
 document.getElementById('use-13').innerHTML = me.care_plan.non_workday.evening[1].usage_instructions;
-if(me.care_plan.non_workday.evening[1].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.evening[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.evening[1].contains_thc == true){
 document.getElementById('warn-13').style.display = 'inline';
 }
 document.getElementById('img-13').src = me.care_plan.non_workday.evening[1].category_image_url;
@@ -267,7 +267,7 @@ document.getElementById('nwbedtime').style.display = 'inline'
 document.getElementById('prod-14').innerHTML = me.care_plan.non_workday.bedtime[0].dose_title;
 document.getElementById('prod-14').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.bedtime[0].name;
 document.getElementById('use-14').innerHTML = me.care_plan.non_workday.bedtime[0].usage_instructions;
-if(me.care_plan.non_workday.bedtime[0].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.bedtime[0].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.bedtime[0].contains_thc == true){
 document.getElementById('warn-14').style.display = 'inline';
 }
 document.getElementById('img-14').src = me.care_plan.non_workday.bedtime[0].category_image_url;
@@ -278,7 +278,7 @@ document.getElementById('div-15').style.display = 'inline'
 document.getElementById('prod-15').innerHTML = me.care_plan.non_workday.bedtime[1].dose_title;
 document.getElementById('prod-15').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.bedtime[1].name;
 document.getElementById('use-15').innerHTML = me.care_plan.non_workday.bedtime[1].usage_instructions;
-if(me.care_plan.non_workday.bedtime[1].thc_cbd_type == "high_cbd_type" || me.care_plan.non_workday.bedtime[1].thc_cbd_type == "one_one_type"){
+if(me.care_plan.non_workday.bedtime[1].contains_thc == true){
 document.getElementById('warn-15').style.display = 'inline';
 }
 document.getElementById('img-15').src = me.care_plan.non_workday.bedtime[1].category_image_url;
