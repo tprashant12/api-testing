@@ -88,7 +88,7 @@ if (me.care_plan.workday.morning != ''){
 //workday morning [0]
 document.getElementById('wmorning').style.display = 'inline'
 document.getElementById('div-0').style.display = 'inline'
-document.getElementById('prod-0').innerHTML = me.care_plan.workday.morning[0].dose_title.split(product);
+document.getElementById('prod-0').innerHTML = me.care_plan.workday.morning[0].dose_title.split(me.care_plan.workday.morning[0].product);
 document.getElementById('prod-0').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.workday.morning[0].name;
 document.getElementById('use-0').innerHTML = me.care_plan.workday.morning[0].usage_instructions;
 if(me.care_plan.workday.morning[0].contains_thc == true){
