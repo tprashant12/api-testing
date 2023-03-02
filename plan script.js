@@ -10,13 +10,27 @@ document.getElementById("plan-text").style.borderBottom = "1px solid #000000";
 document.getElementById("plan-text").style.marginTop = "1px"; 
 document.getElementById("your-plan-mobile-link").style.borderBottom = "1px solid #000000";
  
-document.getElementById('your-products').onclick = function(){
+if(window.location.href.includes('iaff')){
+ 
+ document.getElementById('your-products').onclick = function(){
  window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
 };
  
  document.getElementById('your-products-mobile-link').onclick = function(){
  window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
 };
+}
+
+ if(window.location.href.includes('btu')){
+ 
+ document.getElementById('your-products').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/btu/care-products?k_uid=' + k_uid)
+};
+ 
+ document.getElementById('your-products-mobile-link').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/btu/care-products?k_uid=' + k_uid)
+};
+}
  
  fetch(url)
     .then((response) => {
