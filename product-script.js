@@ -3,14 +3,6 @@ document.getElementById("product-text").style.marginTop = "1px";
 
 document.getElementById("your-products-mobile-link").style.borderBottom = "1px solid #000000";
 
-document.getElementById('your-plan').onclick = function(){
-window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
-};
- 
- document.getElementById('your-plan-mobile-link').onclick = function(){
- window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
-};
-
 const urlParams = new URLSearchParams(window.location.search);
 const k_uid = urlParams.get('k_uid'); 
 
