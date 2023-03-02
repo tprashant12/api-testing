@@ -8,6 +8,27 @@ const k_uid = urlParams.get('k_uid');
 
 const url = 'https://api.eo.care/union/profile/careplan?kuid='+ k_uid ;
 
+//url redirection with k_uid
+if(window.location.href.includes('/iaff/')){
+document.getElementById('your-plan').onclick = function(){
+window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
+};
+ 
+document.getElementById('your-plan-mobile-link').onclick = function(){
+window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
+};
+ 
+if(window.location.href.includes('/btu/')){
+document.getElementById('your-plan').onclick = function(){
+window.open('https://eo-marketing.webflow.io/btu/careplan?k_uid=' + k_uid)
+};
+ 
+ document.getElementById('your-plan-mobile-link').onclick = function(){
+ window.open('https://eo-marketing.webflow.io/btu/careplan?k_uid=' + k_uid)
+};
+}
+
+//fetch function starts
  fetch(url)
     .then((response) => {
       return response.json();
