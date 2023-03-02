@@ -17,6 +17,7 @@ window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
 document.getElementById('your-plan-mobile-link').onclick = function(){
 window.open('https://eo-marketing.webflow.io/iaff/careplan?k_uid=' + k_uid)
 };
+}
  
 if(window.location.href.includes('/btu/')){
 document.getElementById('your-plan').onclick = function(){
