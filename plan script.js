@@ -9,7 +9,42 @@ const url = 'https://api.eo.care/union/profile/careplan?kuid='+ k_uid ;
 document.getElementById("plan-text").style.borderBottom = "1px solid #000000";
 document.getElementById("plan-text").style.marginTop = "1px"; 
 document.getElementById("your-plan-mobile-link").style.borderBottom = "1px solid #000000";
+
+//for modal overlay scroll hiding
+document.getElementById('rec').onclick = function disableScroll() {
+document.body.style.overflowY = 'hidden';
+};
+document.getElementById('rec-2').onclick = function disableScroll() {
+document.body.style.overflowY = 'hidden';
+};
+document.getElementById('close-button').onclick = function enableScroll() {
+document.body.style.overflowY = 'auto';
+}
+document.getElementById('close-button-2').onclick = function enableScroll() {
+document.body.style.overflowY = 'auto';
+}
  
+ //for redirection of link with k_uid
+if(window.location.href.includes('/iaff/')){
+document.getElementById('your-products').onclick = function(){
+window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
+};
+document.getElementById('your-products-mobile-link').onclick = function(){
+window.open('https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid)
+};
+}
+ 
+if(window.location.href.includes('/btu/')){
+document.getElementById('your-products').onclick = function(){
+window.open('https://eo-marketing.webflow.io/btu/care-products?k_uid=' + k_uid)
+};
+ 
+document.getElementById('your-products-mobile-link').onclick = function(){
+window.open('https://eo-marketing.webflow.io/btu/care-products?k_uid=' + k_uid)
+};
+}
+ 
+ //fetch function starts
  fetch(url)
     .then((response) => {
       return response.json();
@@ -33,7 +68,6 @@ if (part3 < 10){
 var part3 = mydate.slice(9, 10);
 }
 
-
 document.getElementById('care-date').innerHTML = part2 + '.' + part3 + '.' + part1;
 
 if(me.care_plan.workday.morning == '' && me.care_plan.workday.afternoon == ''){
@@ -42,7 +76,7 @@ document.getElementById('work-days').style.display = 'none'
  }
 } 
  
- if(me.care_plan.non_workday.morning == '' && me.care_plan.non_workday.afternoon == ''){
+if(me.care_plan.non_workday.morning == '' && me.care_plan.non_workday.afternoon == ''){
 if(me.care_plan.non_workday.evening == '' && me.care_plan.non_workday.bedtime == ''){
 document.getElementById('non-work-days').style.display = 'none'
  }
