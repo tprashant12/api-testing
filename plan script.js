@@ -318,7 +318,7 @@ if(me.care_plan.non_workday.afternoon != ''){
 document.getElementById('div-10').style.display = 'inline'
 document.getElementById('nwafternoon').style.display = 'inline'
 document.getElementById('prod-10').innerHTML = me.care_plan.non_workday.afternoon[0].product;
- document.getElementById('intro-10').innerHTML =  me.care_plan.non_workday.afternoon[0].dose_title.split(me.care_plan.non_workday.aftrenoon[0].product)[0];
+ document.getElementById('intro-10').innerHTML =  me.care_plan.non_workday.afternoon[0].dose_title.split(me.care_plan.non_workday.afternoon[0].product)[0];
  
  if(window.location.href.includes('/iaff/')){
 document.getElementById('prod-10').href = 'https://eo-marketing.webflow.io/iaff/care-products?k_uid=' + k_uid + '&productLink=' + me.care_plan.non_workday.afternoon[0].name;
