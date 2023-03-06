@@ -29,6 +29,16 @@ window.open('https://eo-marketing.webflow.io/btu/careplan?k_uid=' + k_uid)
 };
 }
 
+if(window.location.href.includes('/ethos/')){
+document.getElementById('your-plan').onclick = function(){
+window.open('https://eo-marketing.webflow.io/ethos/careplan?k_uid=' + k_uid)
+};
+ 
+document.getElementById('your-plan-mobile-link').onclick = function(){
+window.open('https://eo-marketing.webflow.io/ethos/careplan?k_uid=' + k_uid)
+};
+}
+
 //fetch function starts
  fetch(url)
     .then((response) => {
