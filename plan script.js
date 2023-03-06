@@ -44,6 +44,15 @@ window.open('https://eo-marketing.webflow.io/btu/care-products?k_uid=' + k_uid)
 };
 }
  
+ if(window.location.href.includes('/ethos/')){
+document.getElementById('your-products').onclick = function(){
+window.open('https://eo-marketing.webflow.io/ethos/care-products?k_uid=' + k_uid)
+};
+document.getElementById('your-products-mobile-link').onclick = function(){
+window.open('https://eo-marketing.webflow.io/ethos/care-products?k_uid=' + k_uid)
+};
+}
+ 
  //fetch function starts
  fetch(url)
     .then((response) => {
