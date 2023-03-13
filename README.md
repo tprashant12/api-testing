@@ -6,4 +6,4 @@
 4. Make them new components in order to use it all along the flow.
 5. Update form links, add redirections in the get started form via Project settings in order to pass union value as parameter in the URL.
 6. Go on pages that contains help navbar, unlink the component and make changes. Make it a component again and use it along the pages. Help navbar is usually in the profiling and account, checkout related pages.
-7. Update the requested script tags wherever necessary in page settings under Body.
+7. Update the script tags wherever necessary in page settings under Body.
